@@ -6,4 +6,4 @@ Designed to live in its own repo: copy this folder's contents to a new repositor
 
 ## To replace
 - Phone, email, Facebook/Instagram links (`href="#"` placeholders) and certificate/insurance details in `index.html`.
-- Service tiles (`.ph` placeholders) and "Our work" gallery with real photos: add to `images/` and swap each `.ph` div for an `<img>`.
+- Replace the illustrative Unsplash photos in the hero, service tiles and "Our work" gallery with locally hosted customer-approved photos before using the site for a real business. The gallery photos are stock imagery, not completed jobs.
