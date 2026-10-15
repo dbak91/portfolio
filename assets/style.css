@@ -15,6 +15,11 @@ nav a{color:var(--ink);text-decoration:none;font-weight:600;padding:.2rem 0;bord
 nav a:hover,nav a[aria-current]{border-bottom-color:var(--ink)}
 .hero{padding:4rem 0 3rem}
 .hero .handle{display:inline-block;background:var(--mint);padding:.15rem .8rem;border-radius:99px;font-weight:600;font-size:.9rem}
+.cv-intro{display:grid;grid-template-columns:12rem 1fr;gap:2rem;align-items:center;padding:3rem 0 1rem}
+.profile{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;box-shadow:0 2px 10px rgba(47,58,68,.15)}
+.cv-list{display:grid;gap:1rem}
+.cv-entry h3{margin-top:0}
+.cv-meta{color:var(--muted);font-weight:600;margin:.25rem 0 .75rem}
 h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.15;margin:.8rem 0 .4rem}
 h2{font-size:1.6rem;margin:0 0 1rem}
 h3{margin:.2rem 0 .5rem}
@@ -42,4 +47,5 @@ section{padding:2.5rem 0}
 ul.feat{padding-left:1.2rem}
 ul.feat li{margin:.3rem 0}
 footer{padding:2rem 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--peach);margin-top:2rem}
+@media (max-width:40rem){.cv-intro{grid-template-columns:1fr;gap:1.5rem}.profile{width:min(12rem,60%);margin:auto}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
