@@ -1,4 +1,19 @@
 (function(){
+  var toggle=document.querySelector('.theme-toggle');
+  if(toggle){
+    function updateTheme(){
+      var dark=document.documentElement.dataset.theme==='dark';
+      toggle.setAttribute('aria-pressed',String(dark));
+      toggle.innerHTML=dark?'☀ <span>Light mode</span>':'☾ <span>Dark mode</span>';
+    }
+    updateTheme();
+    toggle.addEventListener('click',function(){
+      var dark=document.documentElement.dataset.theme!=='dark';
+      document.documentElement.dataset.theme=dark?'dark':'light';
+      try{localStorage.setItem('theme',dark?'dark':'light');}catch(e){}
+      updateTheme();
+    });
+  }
   var y=document.getElementById('year');
   if(y){y.textContent=new Date().getFullYear();}
   var links=document.querySelectorAll('nav a[href^="#"]');
