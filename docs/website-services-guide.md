@@ -24,7 +24,7 @@ You sell a finished website package (files, handover notes, deployment guidance)
 - **SSL**: normally free (Let's Encrypt, included by most hosts).
 - **Email**: not included in hosting by default; Google Workspace/Microsoft 365 roughly £5–£6/user/month; some hosts include basic mailboxes.
 - **Contact forms**: static sites need a third-party form service (e.g. Formspree, free tier) or host-side PHP.
-Typical client first-year total: about £10–£100 depending on choices.
+Typical client first-year total: about £10–£100 depending on choices, excluding any paid booking or payment-provider services.
 
 ## 3. Booking and payment features without running a backend
 The website files are static and I do not sell or manage hosting, so do not promise a custom checkout, payment processing or booking database. Business and Premium can include one suitable third-party booking system or hosted payment portal, using a link or provider-supplied embed/checkout. The provider handles the booking/payment infrastructure; the client owns the provider account and pays any subscription or transaction fees.
