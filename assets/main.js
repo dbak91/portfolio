@@ -11,6 +11,9 @@
       var dark=document.documentElement.dataset.theme!=='dark';
       document.documentElement.dataset.theme=dark?'dark':'light';
       try{localStorage.setItem('theme',dark?'dark':'light');}catch(e){}
+      var url=new URL(window.location.href);
+      url.searchParams.set('theme',dark?'dark':'light');
+      window.history.replaceState(null,'',url);
       updateTheme();
     });
   }
