@@ -14,7 +14,7 @@
 <meta property="og:image:height" content="1200">
 <meta property="og:image:alt" content="David Baker, software developer, with open-source Android and Windows projects">
 <meta name="twitter:card" content="summary_large_image">
-<script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.dataset.theme='dark';}catch(e){}</script>
+<script>try{var requestedTheme=new URLSearchParams(location.search).get('theme');var savedTheme=localStorage.getItem('theme');var theme=requestedTheme==='dark'||requestedTheme==='light'?requestedTheme:savedTheme;if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme;}catch(e){}</script>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -50,11 +50,15 @@
 <article class="card"><h3>VolumeRestore</h3><p>A .NET MAUI Android app that monitors media volume and restores a configured level when a trigger level is reached.</p><a class="btn" href="projects/volumerestore.html">View project</a></article>
 <article class="card"><h3>GitHubDownloadNotifier</h3><p>A .NET 10 Android app that monitors GitHub release-asset download counts and new releases, with configurable schedules, logging and WorkManager notifications.</p><a class="btn" href="projects/githubdownloadnotifier.html">View project</a></article>
 </div></section>
-<section id="services"><h2>Services &amp; design concepts</h2><div class="panel">
-<p><a href="services.html">See my website packages and pricing</a>.</p>
-<p>I also build custom Android apps for distribution outside the Play Store, starting at £300.</p>
+<section id="services"><h2>Weekend services &amp; design concepts</h2><div class="panel">
+<p>I take on private website and Android app work primarily at weekends. <a href="services.html">See my website packages and pricing</a>.</p>
+<p>I also build custom Android apps for distribution outside the Google Play Store, starting at £300.</p>
 <p>Three website template designs offer a starting point for conversations with clients about their goals, layout and visual direction.</p>
 <a class="btn" href="https://dbak91.github.io/templateSites/">Explore the template designs</a>
+</div></section>
+<section id="theme-previews"><h2>Theme previews</h2><div class="panel">
+<p>Open a shareable preview in either colour theme:</p>
+<a class="btn" href="index.html?theme=light">Light mode preview</a><a class="btn alt" href="index.html?theme=dark">Dark mode preview</a>
 </div></section>
 <section id="skills"><h2>Skills</h2><div class="panel"><ul class="tags">
 <li>C#</li><li>C++</li><li>Java</li><li>.NET</li><li>.NET MAUI</li><li>Android</li><li>Windows</li><li>WorkManager</li><li>GitHub API</li><li>Python</li>
