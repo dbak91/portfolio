@@ -17,10 +17,10 @@ nav a:hover,nav a[aria-current]{border-bottom-color:var(--ink)}
 .theme-toggle{margin-left:auto;flex:none;border:1px solid var(--muted);border-radius:99px;background:var(--surface);color:var(--ink);font:inherit;font-size:.9rem;font-weight:600;padding:.4rem .8rem;cursor:pointer}
 .theme-toggle:hover{border-color:var(--ink)}
 .hero{display:grid;grid-template-columns:1fr 9rem;gap:2rem;align-items:center;padding:4rem 0 3rem}
-.hero-profile{display:block;width:9rem;height:auto;aspect-ratio:1;object-fit:cover;border-radius:50%;box-shadow:0 2px 10px rgba(47,58,68,.15);justify-self:end}
+.hero-logo{display:block;width:9rem;height:9rem;object-fit:contain;justify-self:end}
 .hero .handle{display:inline-block;background:var(--mint);padding:.15rem .8rem;border-radius:99px;font-weight:600;font-size:.9rem}
 .cv-intro{display:grid;grid-template-columns:12rem 1fr;gap:2rem;align-items:center;padding:3rem 0 1rem}
-.profile{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:50%;box-shadow:0 2px 10px rgba(47,58,68,.15)}
+.cv-logo{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}
 .cv-list{display:grid;gap:1rem}
 .cv-entry h3{margin-top:0}
 .cv-meta{color:var(--muted);font-weight:600;margin:.25rem 0 .75rem}
@@ -52,5 +52,5 @@ section{padding:2.5rem 0}
 ul.feat{padding-left:1.2rem}
 ul.feat li{margin:.3rem 0}
 footer{padding:2rem 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--border);margin-top:2rem}
-@media (max-width:40rem){.hero{grid-template-columns:1fr;gap:1rem;padding-top:2.5rem}.hero-profile{width:7rem;height:auto;justify-self:start;grid-row:1}.cv-intro{grid-template-columns:1fr;gap:1.5rem}.profile{width:min(12rem,60%);height:auto;margin:auto}}
+@media (max-width:40rem){.hero{grid-template-columns:1fr;gap:1rem;padding-top:2.5rem}.hero-logo{width:7rem;height:7rem;justify-self:start;grid-row:1}.cv-intro{grid-template-columns:1fr;gap:1.5rem}.cv-logo{width:min(12rem,60%);height:auto;margin:auto}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
