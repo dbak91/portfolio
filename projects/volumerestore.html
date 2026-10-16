@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>VolumeRestore · David Baker</title>
-<meta name="description" content="A .NET MAUI Android app that monitors media volume and restores a configured level when a trigger level is reached.">
+<meta name="description" content="A .NET MAUI Android app that counters automatic media-volume reduction by restoring your chosen level when a configured trigger is reached.">
 <script>try{var requestedTheme=new URLSearchParams(location.search).get('theme');var savedTheme=localStorage.getItem('theme');var theme=requestedTheme==='dark'||requestedTheme==='light'?requestedTheme:savedTheme;if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme;}catch(e){}</script>
 <link rel="stylesheet" href="../assets/style.css">
 </head>
@@ -24,9 +24,9 @@
 </div></header>
 <main id="main"><div class="wrap">
 <p class="crumbs"><a href="../index.html">Home</a> / VolumeRestore</p>
-<section style="padding-bottom:1rem"><h1>VolumeRestore</h1><p class="lead">A .NET MAUI Android app that monitors media volume and restores a configured level when a trigger level is reached.</p>
+<section style="padding-bottom:1rem"><h1>VolumeRestore</h1><p class="lead">A .NET MAUI Android app that counters automatic media-volume reduction by restoring your chosen level when a configured trigger is reached.</p>
 <a class="btn" href="https://github.com/dbak91/VolumeRestore">View on GitHub</a><a class="btn alt" href="../index.html#projects">Back to home</a></section>
-<section style="padding-top:1rem"><div class="panel"><h2>The problem it solves</h2><p>Newer Android versions automatically lower the volume when headphones are detected. When a car stereo or speaker is registered as headphones, this leaves the volume far too quiet every time you connect.</p><p>VolumeRestore watches the media volume and, when it drops to a trigger level, puts it back to your chosen level, countering the automatic headphone-volume lowering.</p></div></section>
+<section style="padding-top:1rem"><div class="panel"><h2>The problem it solves</h2><p>Android can automatically lower media volume when it detects headphones. If a car stereo or external speaker is mistaken for headphones, you have to raise the volume again yourself.</p><p>VolumeRestore monitors media volume and restores your chosen level when it detects the configured trigger, automating that intervention.</p></div></section>
 <section style="padding-top:0"><div class="panel"><h2>Key features</h2><ul class="feat"><li>Monitors media volume in the background</li><li>Restores volume when a configured trigger level is reached</li><li>Configurable restore level (full or a set value)</li><li>Aimed at Android 17+ / Pixel behaviour</li></ul></div></section>
 <section style="padding-top:0"><div class="panel"><h2>Tech stack</h2><ul class="tags"><li>C#</li><li>.NET MAUI</li><li>Android</li></ul></div></section>
 <section style="padding-top:0"><div class="panel"><h2>Screenshots</h2><ul class="shots"><li><figure><img src="../images/volumerestore.png" alt="Screenshot of the VolumeRestore Android app" width="864" height="1920" loading="lazy"></figure></li><li><figure><img src="../images/volumerestore-2.png" alt="Second screenshot of the VolumeRestore Android app" width="864" height="1920" loading="lazy"></figure></li></ul></div></section>
