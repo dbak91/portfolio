@@ -17,7 +17,7 @@
 <script>try{var requestedTheme=new URLSearchParams(location.search).get('theme');var savedTheme=localStorage.getItem('theme');var theme=requestedTheme==='dark'||requestedTheme==='light'?requestedTheme:savedTheme;if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme;}catch(e){}</script>
 <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body class="landing">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap">
 <a class="brand" href="index.html">David Baker · MeatIsMurder</a>
@@ -26,56 +26,67 @@
 <li><a href="personal.html">Personal</a></li>
 <li><a href="services.html">Services</a></li>
 <li><a href="index.html#projects">Projects</a></li>
-<li><a href="index.html#services">Design concepts</a></li>
-<li><a href="index.html#affiliates">Affiliates</a></li>
-<li><a href="index.html#skills">Skills</a></li>
 <li><a href="index.html#contact">Contact</a></li>
 </ul></nav>
 <button class="theme-toggle" type="button" aria-pressed="false">☾ <span>Dark mode</span></button>
 </div></header>
 <main id="main"><div class="wrap">
-<section class="hero"><div class="hero-copy"><span class="handle">Associate Software Developer · Fujitsu Services</span>
-<h1>David Baker</h1>
-<p class="lead">Software developer with 10+ years’ professional experience in low-level mainframe operating system software, web work and AI tools, backed by a strong mathematics background. I build affordable websites and offer a wide range of free or paid technology and software consultations. Whatever the service, I explain things in plain English and help make technology easier to understand. <a href="services.html">See my services</a>.</p>
-<a class="btn" href="cv.html">View my CV</a><a class="btn alt" href="#projects">See my projects</a><a class="btn alt" href="https://github.com/dbak91">GitHub: dbak91</a><a class="btn alt" href="services.html">Services</a><a class="btn alt" href="#services">Design concepts</a><a class="btn" href="mailto:dbaker.softdev@gmail.com">Email me</a></div>
+<section class="hero"><div class="hero-copy"><span class="handle">Software developer · 10+ years’ experience</span>
+<h1>Websites. Android apps. Straightforward tech advice.</h1>
+<p class="lead">Practical digital services, delivered with plain-English support.</p>
+<a class="btn" href="mailto:dbaker.softdev@gmail.com">Start a conversation</a><a class="btn alt" href="services.html">Explore services</a></div>
 <img class="hero-logo" src="logo.png" alt="David Baker logo" width="1254" height="1254"></section>
-<section id="experience"><h2>Professional experience</h2><div class="panel">
+<section class="offerings" aria-label="Professional offerings">
+<article class="offering"><span class="offering-number">01</span><h2>Websites</h2><p>Affordable sites for individuals and small businesses.</p><a class="text-link" href="services.html#pricing">Packages &amp; pricing <span aria-hidden="true">↗</span></a></article>
+<article class="offering"><span class="offering-number">02</span><h2>Android apps</h2><p>Custom apps built around your needs.</p><a class="text-link" href="services.html#android-apps">Explore app services <span aria-hidden="true">↗</span></a></article>
+<article class="offering"><span class="offering-number">03</span><h2>Technology advice</h2><p>Friendly, jargon-free help with software and technology.</p><a class="text-link" href="mailto:dbaker.softdev@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a></article>
+</section>
+<section class="landing-details" id="experience"><h2>More about my work</h2>
+<details class="expand-card"><summary>Professional experience</summary><div class="expand-content">
 <h3>Associate Software Developer · Fujitsu Services Ltd</h3>
 <p class="cv-meta">2022–Present · Mainframe system software</p>
 <p>Develops Fujitsu VME operating system software, OS interfaces and internal products. Led development on more than four mainframe OS products and interfaces, delivered 60+ bug fixes, and improved legacy systems including software retirement and migration.</p>
-<p><a href="cv.html">More about my professional experience</a></p>
-</div></section>
-<section id="workload"><h2>Current &amp; past workload</h2>
+<p>Software developer with 10+ years’ professional experience in low-level mainframe operating system software, web work and AI tools, backed by a strong mathematics background.</p>
+<p>Whatever the service, I explain things in plain English and help make technology easier to understand.</p>
+<a href="cv.html">More about my professional experience</a>
+</div></details>
+</section>
+<section class="landing-details" id="workload"><h2>Availability</h2>
+<details class="expand-card"><summary>Current &amp; past workload</summary><div class="expand-content">
 <div class="workload-highlights">
 <article class="card workload-highlight"><h3>Current project</h3><a class="workload-count" href="services.html#project-list" aria-label="1 current project; view the project list">1</a><p>Confirmed private project</p></article>
 <article class="card workload-highlight"><h3>Past open-source projects</h3><a class="workload-count" href="#projects" aria-label="3 past open-source projects; view the project list">3</a><p>Published software projects</p></article>
-</div></section>
-<section id="projects"><h2>Open-source projects</h2>
-<p>Independent software projects and practice websites published on GitHub.</p>
+</div>
+<p><strong>TitanBuildPC</strong> — confirmed project for an ecommerce site for an up-and-coming PC specialist seller expanding from eBay.</p>
+</div></details>
+</section>
+<section class="landing-details" id="projects"><h2>Selected projects</h2>
+<details class="expand-card project-intro"><summary>About these projects</summary><div class="expand-content"><p>Independent software projects and practice websites published on GitHub.</p></div></details>
 <div class="cards">
-<article class="card"><h3>RdpOneClick</h3><p>A Windows utility that automates clicking through the new RDP security prompt, making unsigned .rdp files open in a single click again.</p><a class="btn" href="projects/rdponeclick.html">View project</a></article>
-<article class="card"><h3>VolumeRestore</h3><p>A .NET MAUI Android app that counters Android’s automatic volume reduction when a car stereo or external speaker is mistaken for headphones, restoring your chosen level so you don’t have to raise it manually.</p><a class="btn" href="projects/volumerestore.html">View project</a></article>
-<article class="card"><h3>GitHubDownloadNotifier</h3><p>A .NET 10 Android app that monitors GitHub release-asset download counts and new releases, with configurable schedules, logging and WorkManager notifications.</p><a class="btn" href="projects/githubdownloadnotifier.html">View project</a></article>
+<article class="card"><h3>RdpOneClick</h3><details><summary>Project details</summary><p>A Windows utility that automates clicking through the new RDP security prompt, making unsigned .rdp files open in a single click again.</p></details><a class="btn" href="projects/rdponeclick.html">View project</a></article>
+<article class="card"><h3>VolumeRestore</h3><details><summary>Project details</summary><p>A .NET MAUI Android app that counters Android’s automatic volume reduction when a car stereo or external speaker is mistaken for headphones, restoring your chosen level so you don’t have to raise it manually.</p></details><a class="btn" href="projects/volumerestore.html">View project</a></article>
+<article class="card"><h3>GitHubDownloadNotifier</h3><details><summary>Project details</summary><p>A .NET 10 Android app that monitors GitHub release-asset download counts and new releases, with configurable schedules, logging and WorkManager notifications.</p></details><a class="btn" href="projects/githubdownloadnotifier.html">View project</a></article>
 </div></section>
-<section id="services"><h2>Weekend services &amp; design concepts</h2><div class="panel">
+<section class="landing-details" id="services"><h2>Services &amp; examples</h2>
+<details class="expand-card"><summary>How I work and what I offer</summary><div class="expand-content">
 <p>I take on private website and Android app work primarily at weekends, and offer a wide range of free or paid technology and software consultations. Every service comes with friendly, plain-English support that cuts through the jargon. <a href="services.html">See my website packages and services</a>.</p>
 <p>I also build custom Android apps for distribution outside the Google Play Store, starting at £300.</p>
 <p>Three website template designs offer a starting point for conversations with clients about their goals, layout and visual direction.</p>
 <a class="btn" href="https://dbak91.github.io/templateSites/">Explore the template designs</a>
-</div><div class="cards">
-<article class="card"><h3>Astar</h3><p>A practice website project for getting familiar with the hosting infrastructure.</p><a class="btn" href="https://dbak91.github.io/Astar/">Visit website</a></article>
-<article class="card"><h3>AnnettesScents2</h3><p>A second practice website project for getting familiar with the hosting infrastructure.</p><a class="btn" href="https://dbak91.github.io/AnnettesScents2/">Visit website</a></article>
+</div></details>
+<div class="cards example-cards">
+<article class="card"><h3>Astar</h3><details><summary>About this example</summary><p>A practice website project for getting familiar with the hosting infrastructure.</p></details><a class="btn" href="https://dbak91.github.io/Astar/">Visit website</a></article>
+<article class="card"><h3>AnnettesScents2</h3><details><summary>About this example</summary><p>A second practice website project for getting familiar with the hosting infrastructure.</p></details><a class="btn" href="https://dbak91.github.io/AnnettesScents2/">Visit website</a></article>
 </div></section>
-<section id="affiliates"><h2>Need a PC or parts?</h2><div class="panel affiliate-panel">
+<section class="landing-details" id="affiliates"><h2>Recommended retailer</h2><details class="expand-card"><summary>Need a PC or parts?</summary><div class="expand-content affiliate-panel">
 <img class="affiliate-logo" src="titanlogo.jpg" alt="TitanBuildPC logo">
 <div><p>Looking for a new PC or the parts to build one? Browse TitanBuildPC on eBay for PC builds and components from a dedicated seller.</p>
 <a class="btn" href="https://www.ebay.co.uk/usr/titanbuildpc">Visit TitanBuildPC on eBay</a></div>
-</div></section>
-<section id="skills"><h2>Skills</h2><div class="panel"><ul class="tags">
+</div></details></section>
+<section class="landing-details" id="skills"><h2>Technical skills</h2><details class="expand-card"><summary>View skills</summary><div class="expand-content"><ul class="tags">
 <li>C#</li><li>C++</li><li>Java</li><li>.NET</li><li>.NET MAUI</li><li>Android</li><li>Windows</li><li>WorkManager</li><li>GitHub API</li><li>Python</li>
-</ul></div></section>
-<section id="contact"><h2>Contact</h2><div class="panel"><p>Get in touch by email or GitHub.</p>
-<a class="btn" href="mailto:dbaker.softdev@gmail.com">Email me</a><a class="btn alt" href="https://github.com/dbak91">github.com/dbak91</a></div></section>
+</ul></div></details></section>
+<section class="contact-block" id="contact"><h2>Have a project in mind?</h2><a class="btn" href="mailto:dbaker.softdev@gmail.com">Email me</a><a class="btn alt" href="https://github.com/dbak91">GitHub</a></section>
 </div></main>
 <footer><div class="wrap">&copy; <span id="year">2026</span> David Baker (MeatIsMurder)</div></footer>
 <script src="assets/main.js"></script>
