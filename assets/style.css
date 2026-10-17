@@ -70,6 +70,7 @@ footer{padding:2rem 0;color:var(--muted);font-size:.9rem;border-top:1px solid va
 .landing .hero .handle{background:var(--surface)}
 .landing .hero h1{max-width:13ch;font-size:clamp(2rem,5vw,3.8rem);letter-spacing:-.045em}
 .landing .hero .lead{max-width:32rem;color:var(--ink);font-size:clamp(1.15rem,2vw,1.45rem)}
+.landing .hero-copy .btn{font-size:.9rem;padding:.55rem 1rem}
 .landing .hero-logo{width:100%;height:auto;max-width:22rem}
 .offerings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;padding:1rem 0 3rem}
 .offering{min-height:17rem;padding:1.75rem;background:var(--surface);border-radius:var(--radius);border-top:6px solid var(--peach);box-shadow:0 2px 10px var(--shadow);display:flex;flex-direction:column}
