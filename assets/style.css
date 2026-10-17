@@ -93,6 +93,18 @@ footer{padding:2rem 0;color:var(--muted);font-size:.9rem;border-top:1px solid va
 .contact-block{margin:2rem 0;padding:clamp(1.5rem,5vw,3rem);border-radius:var(--radius);background:var(--surface);box-shadow:0 2px 10px var(--shadow)}
 .contact-block h2{font-size:clamp(1.6rem,4vw,2.5rem)}
 .landing section[id]{scroll-margin-top:1rem}
+:root{--landing-peach:#fff0e5;--landing-lemon:#fff8df;--landing-mint:#eaf6ed;--landing-sky:#edf5fc}
+:root:not([data-theme="dark"]) .landing .offering:nth-child(1){background:var(--landing-peach)}
+:root:not([data-theme="dark"]) .landing .offering:nth-child(2){background:var(--landing-mint)}
+:root:not([data-theme="dark"]) .landing .offering:nth-child(3){background:var(--landing-sky)}
+:root:not([data-theme="dark"]) .landing #experience>.expand-card,:root:not([data-theme="dark"]) .landing #affiliates>.expand-card{background:var(--landing-peach)}
+:root:not([data-theme="dark"]) .landing #workload>.expand-card,:root:not([data-theme="dark"]) .landing #skills>.expand-card{background:var(--landing-lemon)}
+:root:not([data-theme="dark"]) .landing #projects>.expand-card{background:var(--landing-mint)}
+:root:not([data-theme="dark"]) .landing #services>.expand-card{background:var(--landing-sky)}
+:root:not([data-theme="dark"]) .landing .cards>.card:nth-child(4n+1){background:var(--landing-peach)}
+:root:not([data-theme="dark"]) .landing .cards>.card:nth-child(4n+2){background:var(--landing-lemon)}
+:root:not([data-theme="dark"]) .landing .cards>.card:nth-child(4n+3){background:var(--landing-mint)}
+:root:not([data-theme="dark"]) .landing .contact-block{background:var(--landing-sky)}
 @media (max-width:40rem){.hero{grid-template-columns:1fr;gap:1rem;padding-top:2.5rem}.hero-logo{width:7rem;height:7rem;justify-self:start;grid-row:1}.cv-intro{grid-template-columns:1fr;gap:1.5rem}.cv-logo{width:min(12rem,60vw);height:min(12rem,60vw);margin:auto}.affiliate-panel{grid-template-columns:1fr}.affiliate-logo{width:min(10rem,60vw)}}
 @media (max-width:40rem){.landing .hero{grid-template-columns:1fr;min-height:0;padding:2rem;margin-top:.75rem}.landing .hero-logo{width:min(10rem,45vw);height:auto;grid-row:auto;justify-self:start}.landing .hero h1{font-size:clamp(1.75rem,8.5vw,3rem)}.offerings{grid-template-columns:1fr;padding-bottom:2rem}.offering{min-height:0}.offering h2{margin-top:.6rem}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
