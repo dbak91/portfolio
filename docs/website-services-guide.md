@@ -3,7 +3,7 @@
 Internal notes (not part of the public site). Prices are suggested introductory UK figures, not verified market averages. Check current provider prices before quoting.
 
 ## 1. Model
-You sell a finished website package (files, handover notes, deployment guidance). You do **not** sell hosting or run an ongoing managed service. The client owns the hosting and domain accounts and pays providers directly.
+You sell a finished website package (files, handover notes, deployment guidance). Separately, you may be able to offer ongoing hosting through your portal, subject to suitability and availability. Quote this separately using audited hosting and infrastructure capital costs plus an agreed percentage service fee for management and maintenance. Set out the rate, scope and service terms before the client commits.
 
 | Package | Price | Scope | Corrections | Delivery |
 |---|---|---|---|---|
@@ -20,14 +20,14 @@ You sell a finished website package (files, handover notes, deployment guidance)
 
 ## 2. Realistic costs the client pays (approximate, check current prices)
 - **Domain**: .co.uk roughly £5–£12/year; .com roughly £10–£15/year. Renewal is often higher than the first year.
-- **Static hosting**: free options exist (GitHub Pages, Cloudflare Pages, Netlify) and suit static sites; traditional shared hosting roughly £2–£8/month.
+- **Static hosting**: providers and plans vary; check current prices and commercial-use terms before recommending one. Traditional shared hosting is roughly £2–£8/month.
 - **SSL**: normally free (Let's Encrypt, included by most hosts).
 - **Email**: not included in hosting by default; Google Workspace/Microsoft 365 roughly £5–£6/user/month; some hosts include basic mailboxes.
 - **Contact forms**: static sites need a third-party form service (e.g. Formspree, free tier) or host-side PHP.
 Typical client first-year total: about £10–£100 depending on choices, excluding any paid booking or payment-provider services.
 
 ## 3. Booking and payment features without running a backend
-The website files are static and I do not sell or manage hosting, so do not promise a custom checkout, payment processing or booking database. Business and Premium can include one suitable third-party booking system or hosted payment portal, using a link or provider-supplied embed/checkout. The provider handles the booking/payment infrastructure; the client owns the provider account and pays any subscription or transaction fees.
+The website files are static, so do not promise a custom checkout, payment processing or booking database. Business and Premium can include one suitable third-party booking system or hosted payment portal, using a link or provider-supplied embed/checkout. The provider handles the booking/payment infrastructure; the client owns the provider account and pays any subscription or transaction fees.
 
 Before offering this as part of a quote:
 1. Ask what the client needs to sell or book, including prices, availability, cancellations/refunds and notifications.
@@ -36,19 +36,21 @@ Before offering this as part of a quote:
 4. Agree in writing exactly what is included. Use the provider’s hosted checkout/booking page or approved embed; do not build a payment backend or claim to process payments yourself. If an embed needs a paid hosting plan, backend, custom API work or a feature beyond your ability, explain that before accepting the work and quote separately or decline it.
 5. Add links/embed to the website, then test on desktop and mobile. For payments, use the provider’s test mode and verify the complete customer journey before launch; for bookings, test availability, confirmation and cancellation flows. Have the client verify their live account and payout settings.
 6. Ensure the client supplies suitable privacy, cookie, terms, refund/cancellation and booking-policy wording. Explain what customer data the provider collects and check whether the site needs consent controls. The client should confirm their legal/data-protection obligations; get professional advice if unsure.
-7. Deploy the site to a compatible host and test the live integration again. The client pays for hosting/domain and third-party services directly. Explain that provider outages, account changes, fees, payments and ongoing service support are outside the website package unless separately agreed.
+7. Deploy the site to a compatible host and test the live integration again. The client pays hosting, domain and third-party service costs directly unless portal hosting has been separately agreed. Explain that provider outages, account changes, fees, payments and ongoing service support are outside the website package unless separately agreed.
 
 If the client needs custom payment flows, stored customer/payment data, a booking database or automated business-system integration, that requires a properly hosted backend and additional security, privacy, maintenance and support planning. Do not include it in these fixed-price packages without the skills and a separate plan for those responsibilities.
 
-## 4. What you need to know before expanding into hosting/domains
-Guided help (recommended): you explain options, and the client signs up and pays. You never hold their credentials, or if you must, they are temporary and revoked afterwards. Ensure the client is the registrant and account owner of the domain.
+## 4. Offering portal hosting
+Hosting through your portal is an optional, separately quoted ongoing service, not part of the fixed-price website packages. Confirm technical suitability and availability first. Use an agreed rate based on audited hosting and infrastructure capital costs plus a percentage service fee for management and maintenance; explain how costs are audited, how often charges are reviewed, and what work and support the fee includes.
 
-Reselling hosting/domains or managing it (not recommended initially) means:
+Before offering it, define:
 - You become responsible for uptime, backups, security patches and support, often outside weekends.
 - Data protection: you may become a processor of client data (UK GDPR); consider ICO registration (data protection fee, from around £40/year for small controllers) and a processing agreement.
 - Insurance: professional indemnity/public liability, typically about £100–£300/year for a small sole trader.
-- Margins on reselling are small (a few pounds per month per client) versus the support burden.
-- If you do add it later, sell it as a separate monthly maintenance plan with a defined scope and response times.
+- A written service agreement covering scope, response times, outages, backups, security, maintenance, cancellation and handover/export.
+- Secure delegated access and account ownership; never ask clients to send passwords.
+
+For provider-hosted websites, guide the client through setup and have them own and pay the provider directly. Check the provider’s commercial-use terms before recommending it.
 
 ## 5. Business basics (UK)
 - Sole trader: register with HMRC for Self Assessment by 5 October after the tax year you start trading. The £1,000 trading allowance may cover small side income. Check your employment contract (Fujitsu) for rules on outside work or conflicts of interest, and get permission if needed.
